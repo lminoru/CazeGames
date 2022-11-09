@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color:#DEDDDC;
+}
+
+body {
+	background-image:url("images/login_wall.png");
+	background-size:cover;
+}
+
+header {
+	background-color: #111111;
+	text-align: center;
+}
+
+#login-box {
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	padding:5vh;
+	color:#DEDDDC;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	min-width: 448px;
+	min-height: 341px;
+	text-align: center;
+	z-index: 1;
+}
+
+#login-box::before {
+	content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(17, 17, 17, 0.6);
+	z-index:-1;
+	backdrop-filter: blur(5px);
+}
+
+.password-forgot {
+	font-size: 12px;
+	margin:10px;
+	margin-left: 0;
+	cursor: pointer;
+	text-align: left;
+	transition: 0.5s;
+}
+
+.password-forgot:hover {
+	transition:0.5s;
+	color:white;
+}
+
+#login-box p[class="label"] {
+	margin:5px;
+	margin-left:0;
+	font-size: 16px;
+	text-align: left;
+}
+
+
+#login-box input[type="text"], #login-box input[type="password"] {
+	background-color: #2C2B2B;
+	border:none;
+	font-size:14px;
+	color:white;
+	padding:0.8em;
+	width: 100%;
+	color:#DEDDDC;
+}
+
+#login-box input[type="checkbox"]{
+  position: relative;
+  appearance: none;
+  background-color: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 16px;
+  height: 16px;
+  border: 0.05em solid currentColor;
+  border-radius: 0.15em;
+  cursor: pointer;
+  margin:5px;
+  float:left;
+  box-sizing: border-box;
+  margin-left:0;
+
+}
+
+#login-box input[type="checkbox"]::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em #DC2F02;
+	border-radius: 0.15em;
+	top:0;
+	left: 0;
+}
+
+#login-box input[type="checkbox"]:checked::before {
+	transform: scale(1);
+}
+
+#login-box input[type="submit"] {
+	margin:2vh;
+	width: 70%;
+	transition: 0.5s;
+}
+
+#login-box input[type="submit"]:hover {
+	margin:2vh;
+	width: 70%;
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.default-orange-style{
+	background: linear-gradient(90deg, #DC2F02 0%, #FF6339 100%);
+	padding: 8px 24px;
+	color:white;
+	border-radius: 2px;
+	border:none;
+	font-family: 'Bebas Neue', cursive;
+	font-size:20px;
+	cursor: pointer;
+}
+
+.remember-me {
+	font-size: 12px;
+	float:left;
+	margin-top:5px;
+}
+
+#msg-box {
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	padding:5vh;
+	color:#DEDDDC;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	max-width: 448px;
+	text-align: center;
+	z-index: 1;
+	text-align: right;
+	font-size: 16px;
+}
+
+#msg-box > #title {
+	margin-bottom:2vw;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+#msg-box::before {
+	content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(17, 17, 17, 0.6);
+	z-index:-1;
+	backdrop-filter: blur(5px);
+}
+
+.msg {
+	text-align: left;
+	margin:1vw;
+}
+
+
+.show {
+	transition: 0.5s;
+}
+
+.show:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+
+#confirmation-box {
+	position: absolute;
+	left: 50%;
+	top:60%;
+	transform: translate(-50%, -50%);
+	padding:5vh;
+	color:#DEDDDC;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	z-index: 1;
+	text-align: right;
+	font-size: 16px;
+	min-width: 70vw;
+	min-height: 60vh;
+}
+
+#confirmation-box::before {
+	content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(17, 17, 17, 0.6);
+	z-index:-1;
+	backdrop-filter: blur(5px);
+}
+
+
+.game-confirmation {
+	position: relative;
+	background-color:#111111;
+	display: flex;
+	flex-direction: row;
+	height: 4vw;
+	overflow: hidden;
+	padding:1vw;
+	font-family: 'Bebas Neue', cursive;
+	color:#FFFFFF;
+}
+
+.game-confirmation-name {
+	font-size: 28px;
+	color:white;
+	margin:1vw;
+	flex:0.20;
+}
+
+.game-confirmation-price {
+	flex:1;
+	font-size: 24px;
+	margin:1vw;
+	font-family: 'Roboto', sans-serif;
+}
+
+.game-confirmation > img {
+	overflow: hidden;
+}
+
+
+.buy-confirmation {
+	background-color:#111111;
+	margin-top:1vw;
+	padding:0.5vw;
+	text-align: left;
+	font-size: 24px;
+}
+
+
+.buy-confirmation p {
+	margin:1vw;
+}
+
+.buy-confirmation hr {
+	display: block;
+	border:none;
+	height: 1px;
+	background-color:#2C2B2B;
+	margin:2vw;
+}
+
+
+#payment-method-info {
+	text-align: left;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+#buy-total {
+	text-align: right;
+}
+
+.buy-confirmation input[type="checkbox"]{
+  position: relative;
+  appearance: none;
+  background-color: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 24px;
+  height: 24px;
+  border: 0.05em solid currentColor;
+  border-radius: 0.15em;
+  cursor: pointer;
+  margin:5px;
+  float:left;
+  box-sizing: border-box;
+  margin-right:1vw;
+
+}
+
+.buy-confirmation input[type="checkbox"]::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em #DC2F02;
+	border-radius: 0.15em;
+	top:0;
+	left: 0;
+}
+
+.buy-confirmation input[type="checkbox"]:checked::before {
+	transform: scale(1);
+}
+
+.buy-confirmation div {
+	text-align: right;
+}
+
+.buy-confirmation input[type="submit"] {
+	font-size: 28px;
+	margin:1vw;
+}
+
+.warn {
+	max-width: 10vw;
+	margin:1vw;
+	text-align: center;
+}
