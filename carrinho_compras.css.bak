@@ -308,11 +308,10 @@ body {
 
 .buy-btn {
 	font-size: 20pt;
-	flex:0.25;
+	flex:0.15;
 	flex-direction: row;
 	margin-right: 1vh;
 	margin-top:5vh;
-	
 }
 
 
