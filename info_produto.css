@@ -248,7 +248,7 @@ footer ul li {
 	overflow: hidden;
 }
 
-.game-confirmation-rect > p {
+.game-confirmation-rect > p, .game-confirmation-rect > a > p {
 	position: relative;
 	width:100%;
 	display: flex;

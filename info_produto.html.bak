@@ -42,7 +42,7 @@
 				<span class="game-confirmation-name"> COMPRE CYBERPUNK 2077</span>
 				<p><span class="game-discount">-50%</span>
 						<span class="game-price-gray">R$ 159,99</span>
-						<a href="login.html" tabindex="-1" style="text-decoration:none"><spam class="default-orange-style" id="game-btn" tabindex="0">COMPRE AGORA</spam></a>
+						<span class="default-orange-style" id="game-btn" tabindex="0" onclick='window.href="login.html"'>COMPRE AGORA</span>
 				</p>
 			</div>
 
@@ -313,5 +313,15 @@
 			$("#navigator li:nth-child(1)").css("color", "#DC2F02");
 		});
 	</script>
+	<div vw class="enabled">
+	<div vw-access-button class="active"></div>
+	<div vw-plugin-wrapper>
+	  <div class="vw-plugin-top-wrapper"></div>
+	</div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+	new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 </body>
 </html>

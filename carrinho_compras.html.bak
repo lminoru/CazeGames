@@ -62,7 +62,7 @@
 						<p>R$ 33,33</p>
 					</div>
 					<div class="buy-buttons">
-						<a href="confirmacao_compra.html" tabindex="-1"><button class="default-orange-style buy-btn">COMPRAR PARA MINHA CONTA</button></a>
+						<button class="default-orange-style buy-btn">COMPRAR PARA MINHA CONTA</button>
 						<button class="more-info hbtn hvr-sweep-to-right buy-btn">COMPRAR PARA PRESENTE</button>
 					</div>
 				</div>
@@ -124,5 +124,15 @@
 			$("#navigator li:nth-child(1)").css("color", "#DC2F02");
 		});
 	</script>
+	<div vw class="enabled">
+	<div vw-access-button class="active"></div>
+	<div vw-plugin-wrapper>
+	  <div class="vw-plugin-top-wrapper"></div>
+	</div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+	new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 </body>
 </html>
