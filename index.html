@@ -8,28 +8,34 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-		<script
+	<script
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
   crossorigin="anonymous"></script>
 	<title>CZGames</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
+	<i class="fa fa-bars" id="menu_activate"></i>
+	<div class="mobile-menu">
+		<img src="images/logo-org.png"/>
+	</div>
 
 	<section id="main_div">
 		<div id="menu">
 			<img src="images/logo-org.png"/>
 			<ul id="navigator">
-				<li>INÍCIO</li>
-				<li>CATÁLOGO</li>
-				<li>CZ NUVEM</li>
-				<li>BIBLIOTECA</li>
+				<li tabindex="0">INÍCIO</li>
+				<li tabindex="0">CATÁLOGO</li>
+				<li tabindex="0">CZ NUVEM</li>
+				<li tabindex="0">BIBLIOTECA</li>
 			</ul>
 			<ul id="icon_list">
-				<li><i class="fa fa-search"></i></li>
-				<li><i class="fa fa-universal-access"></i></li>
-				<li><i class="fa fa-shopping-cart"></i></li>
-				<li><i class="fa fa-user"></i></li>
+				<li tabindex="0"><i class="fa fa-search"></i></li>
+				<li tabindex="0"><i class="fa fa-universal-access"></i></li>
+				<li tabindex="0"><i class="fa fa-shopping-cart"></i></li>
+				<li tabindex="0"><i class="fa fa-user"></i></li>
 			</ul>
 		</div>
 
@@ -45,7 +51,7 @@
 			<button class="default-orange-style see-more">VER MAIS</button>
 		</div>
 		<ul class="game-list">
-			<li class="game-item-box">
+			<a href="login.html" tabindex="-1"><li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/gtav.jpg"/>
 				<div class="game-info">
 					<span class="game-name">GTA V - Grant Theft Auto Five</span>
@@ -60,9 +66,9 @@
 						<span class="game-add-button"><i class="fas fa-plus"></i></span>
 					</p>
 				</div>
-			</li>
+			</li></a>
 
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/the_witcher3.jpg"/>
 				<div class="game-info">
 					<span class="game-name">The Witcher 3 - Wild Hunt</span>
@@ -79,7 +85,7 @@
 				</div>
 			</li>
 
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/assassins_creed_bf.jpg"/>
 				<div class="game-info">
 					<span class="game-name">Assassin's Creed Black Flag</span>
@@ -97,7 +103,7 @@
 			</li>
 
 			
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/res3.png"/>
 				<div class="game-info">
 					<span class="game-name">Resident Evil 3</span>
@@ -115,7 +121,7 @@
 			</li>
 
 			
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/fall_guys.jpg"/>
 				<div class="game-info">
 					<span class="game-name">Fall Guys</span>
@@ -132,7 +138,7 @@
 				</div>
 			</li>
 
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/bf4.jpg"/>
 				<div class="game-info">
 					<span class="game-name">Battlefield 4</span>
@@ -159,7 +165,7 @@
 	<section id="jogos-secao">
 		<p class="section-title">CONTINUAR JOGANDO</p>
 		<ul class="game-list">
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/kf2.png"/>
 				<div class="game-info">
 					<span class="game-name">Killing Floor 2</span>
@@ -173,7 +179,7 @@
 				</div>
 			</li>
 
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/cp2077.jpg"/>
 				<div class="game-info">
 					<span class="game-name">Cyberpunk 2077</span>
@@ -187,7 +193,7 @@
 				</div>
 			</li>
 
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/lf3.jpg"/>
 				<div class="game-info">
 					<span class="game-name">Left 4 Dead 3</span>
@@ -208,7 +214,7 @@
 		<p class="section-title">JOGO DA SEMANA</p>
 
 		<ul class="game-list">
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 					<img class="game-wallpaper" src="images/games/rd2.jpg"/>
 					<div class="game-info">
 						<span class="game-name">Red Dead Redemption 2</span>
@@ -234,7 +240,7 @@
 			<button class="default-orange-style see-more">VER MAIS</button>
 		</div>
 		<ul class="game-list">
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/gtav.jpg"/>
 				<div class="game-info">
 					<span class="game-name">GTA V - Grant Theft Auto Five</span>
@@ -251,7 +257,7 @@
 				</div>
 			</li>
 
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/the_witcher3.jpg"/>
 				<div class="game-info">
 					<span class="game-name">The Witcher 3 - Wild Hunt</span>
@@ -268,7 +274,7 @@
 				</div>
 			</li>
 
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/assassins_creed_bf.jpg"/>
 				<div class="game-info">
 					<span class="game-name">Assassin's Creed Black Flag</span>
@@ -286,7 +292,7 @@
 			</li>
 
 			
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/res3.png"/>
 				<div class="game-info">
 					<span class="game-name">Resident Evil 3</span>
@@ -304,7 +310,7 @@
 			</li>
 
 			
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/fall_guys.jpg"/>
 				<div class="game-info">
 					<span class="game-name">Fall Guys</span>
@@ -321,7 +327,7 @@
 				</div>
 			</li>
 
-			<li class="game-item-box">
+			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/bf4.jpg"/>
 				<div class="game-info">
 					<span class="game-name">Battlefield 4</span>
@@ -391,6 +397,10 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#navigator li:nth-child(1)").css("color", "#DC2F02");
+		});
+
+		$("#menu_activate").click(function () {
+			$("#menu").slideToggle();
 		});
 	</script>
 </body>

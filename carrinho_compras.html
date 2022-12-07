@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="effects.css">
+	<link rel="stylesheet" type="text/css" href="carrinho_compras.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+	<title>CZGames</title>
+</head>
+<body>
+
+	<section id="main_div">
+		<div id="menu">
+			<img src="images/logo-org.png"/>
+			<ul id="navigator">
+				<li tabindex="0">INÍCIO</li>
+				<li tabindex="0">CATÁLOGO</li>
+				<li tabindex="0">CZ NUVEM</li>
+				<li tabindex="0">BIBLIOTECA</li>
+			</ul>
+			<ul id="icon_list">
+				<li tabindex="0"><i class="fa fa-search"></i></li>
+				<li tabindex="0"><i class="fa fa-universal-access"></i></li>
+				<li tabindex="0"><i class="fa fa-shopping-cart"></i></li>
+				<li tabindex="0"><i class="fa fa-user"></i></li>
+			</ul>
+		</div>
+		<section id="carrinho-content">
+			<div>
+				<p class="section-title">SEU CARRINHO DE COMPRAS</p>
+				<div class="gray-box-style game-card">
+					<img src="images/games/cyber-punk-2077-banner2.png">
+					<p class="game-name-card">CYBERPUNK 2077 <i class="fa fa-trash" tabindex="0"></i></p>
+					<div class="game-card-price">
+						<p class="game-discount-price">R$ 53,33</p>
+						<p class="game-price-card">R$ 33,33</p>
+					</div>
+				</div>
+				
+				<div class="gray-box-style game-card proposes-card">
+					<p>ASSINE CZ NA NÚVEM E JOGUE EM QUALQUER LUGAR!</p>
+					<div class="game-propose-card">
+						<p class="game-price-gray-box">R$ 29,99</p>
+						<p class="add-cart-btn" tabindex="0">ADICIONAR AO CARRINHO</p>
+					</div>
+				</div>
+
+				<div class="gray-box-style last-gray-box">
+					<div class="descontos">
+						<p class="valor-economizado">Valor economizado</p>
+						<p>- R$ 20,00</p>
+					</div>
+					<div class="total-estimado">
+						<p class="total-compra">Total estimado: </p>
+						<p>R$ 33,33</p>
+					</div>
+					<div class="buy-buttons">
+						<button class="default-orange-style buy-btn">COMPRAR PARA MINHA CONTA</button>
+						<button class="more-info hbtn hvr-sweep-to-right buy-btn">COMPRAR PARA PRESENTE</button>
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+	</section>
+
+
+	<footer>
+		<!--<i class="far fa-copyright"></i><p>All rights reserved</p>-->
+		<div>
+			<p><b>Nossas redes sociais</b></p>
+			<ul class="flex-display">
+				<a href="https://www.instagram.com/"><li><i class="fab fa-instagram"></i></li></a>
+				<a href="https://www.facebook.com/"><li><i class="fab fa-facebook"></i></li></a>
+				<a href="https://www.twitter.com/"><li><i class="fab fa-twitter"></i></li></a>
+			</ul>
+		</div>
+
+		<div>
+			<p><b>Sobre nós</b></p>
+			<ul class="break-list">
+				<a href="https://www.instagram.com/"><li>Sobre nós</li></a>
+				<a href="https://www.facebook.com/"><li>FAQ</li></a>
+			</ul>
+		</div>
+
+		<div>
+			<p><b>Fale conosco</b></p>
+			<ul class="break-list">
+				<a href="https://www.instagram.com/"><li>Fale conosco</li></a>
+			</ul>
+		</div>
+
+		<div>
+			<p><b>Termos de uso</b></p>
+			<ul class="break-list">
+				<a href="https://www.instagram.com/"><li>Nossos termos</li></a>
+			</ul>
+		</div>
+
+
+		<div>
+			<p><b>Métodos de pagamento</b></p>
+			<ul class="flex-display">
+				<li><i class="fab fa-cc-visa"></i></li>
+				<li><i class="fab fa-cc-mastercard"></i></li>
+				<li><i class="fab fa-paypal"></i></li>
+				<li><i class="fa-brands fa-pix"></i></li>
+			</ul>
+		</div>
+
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#navigator li:nth-child(1)").css("color", "#DC2F02");
+		});
+	</script>
+</body>
+</html>
