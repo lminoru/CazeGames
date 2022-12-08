@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.menu-acessibilidade {
+	position: absolute;
+	background-color: #0A0908;
+	padding:3vh;
+	color:#FFFFFF;
+	z-index: 9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt;
+	text-align: left;
+	border-radius:10px;
+	right: 10vh;
+	display: none;
+
+}
+
+.menu-acessibilidade > h1 {
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.menu-acessibilidade i {
+	font-size: 20pt;
+	cursor: pointer;
+	margin:1vh;
+}
+
+.menu-acessibilidade > div {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.menu-acessibilidade > div > span {
+	flex:1;
+	margin:1vh;
+}
