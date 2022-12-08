@@ -434,16 +434,26 @@
 		});
 
 		$(".increase-font").click(function() {
-
+			$("*").each(function() {
+				var fontsize = parseInt($(this).css('font-size'));
+				var newfontsize = fontsize * 1.1;
+				$(this).css('font-size', newfontsize + "px");
+			});
 		});
 
 		$(".decrease-font").click(function() {
-			
+			$("*").each(function() {
+				var fontsize = parseInt($(this).css('font-size'));
+				var newfontsize = fontsize * (10/11);
+				$(this).css('font-size', newfontsize + "px");
+			});
 		});
 
 		$(".screen-reader").click(function(){
-			
+
 		});
+
+
 	</script>
 
 
