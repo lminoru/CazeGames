@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,28 +23,28 @@
 	</div>
 
 	<section id="main_div">
-		<div id="menu">
-			<img src="images/logo-org.png" alt="Logo do Site"/>
+		<div id="menu" aria-label="menu">
+			<img src="images/logo-org.png" alt="Logo do Site" tabindex="0"/>
 			<ul id="navigator" aria-label="navegação">
 				<li tabindex="0">INÍCIO</li>
 				<li tabindex="0">CATÁLOGO</li>
 				<li tabindex="0">CZ NUVEM</li>
 				<li tabindex="0">BIBLIOTECA</li>
 			</ul>
-			<ul id="icon_list">
-				<li tabindex="0"><i class="fa fa-search"></i></li>
-				<li tabindex="0"><i class="fa fa-universal-access"></i></li>
-				<li tabindex="0"><i class="fa fa-shopping-cart"></i></li>
-				<li tabindex="0"><i class="fa fa-user"></i></li>
+			<ul id="icon_list" aria-label="ferramentas">
+				<li tabindex="0"><i class="fa fa-search" title="Ferramenta de Busca"></i></li>
+				<li tabindex="0"><i class="fa fa-universal-access" title="Acessibilidade"></i></li>
+				<li tabindex="0"><i class="fa fa-shopping-cart" title="Carrinho de Compras"></i></li>
+				<li tabindex="0"><i class="fa fa-user" title="Usuário"></i></li>
 			</ul>
 		</div>
 	</section>
 
 	<section id="game-information">
 		<div class="game-information-images">
-			<img src="images/games/cyber-punk-2077.png">
+			<img src="images/games/cyber-punk-2077.png" lang="en" alt="Cyberpunk 2077" title="Cyberpunk 2077" tabindex="0">
 			<div class="game-confirmation-rect">
-				<span class="game-confirmation-name"> COMPRE CYBERPUNK 2077</span>
+				<span class="game-confirmation-name"> COMPRE <span lang="en">CYBERPUNK</span> 2077</span>
 				<p>
 						<span class="game-discount">-50%</span>
 						<span class="game-price-gray">R$ 159,99</span>
@@ -85,15 +85,15 @@
 
 
 		<div class="game-information-info">
-			<img src="images/games/cyber-punk-2077-banner2.png">
+			<img src="images/games/cyber-punk-2077-banner2.png" alt="Banner do jogo">
 			<ul class="game-genres">
-				<li class="default-orange-style">MUNDO ABERTO</li>
-				<li class="default-orange-style">AÇÃO</li>
-				<li class="default-orange-style">FICÇÃO CIENTÍFICA</li>
+				<li class="default-orange-style" tabindex="0">MUNDO ABERTO</li>
+				<li class="default-orange-style" tabindex="0">AÇÃO</li>
+				<li class="default-orange-style" tabindex="0">FICÇÃO CIENTÍFICA</li>
 			</ul>
 			<div class="game-text-info">
-				<p class="game-title">CYBERPUNK 2077</p>
-				<p class="game-desc">Cyberpunk 2077 é um RPG de ação e aventura em mundo aberto que se passa em Night City, uma megalópole perigosa onde todos são obcecados por poder, glamour e alterações corporais. </p>
+				<p class="game-title" lang="en" tabindex="0">CYBERPUNK 2077</p>
+				<p class="game-desc" tabindex="0">Cyberpunk 2077 é um RPG de ação e aventura em mundo aberto que se passa em Night City, uma megalópole perigosa onde todos são obcecados por poder, glamour e alterações corporais. </p>
 				<hr>
 			</div>
 			<div class="game-release-info">
@@ -102,12 +102,12 @@
 					<button class="default-gray-style" tabindex="-1">09/12/2021</button>
 				</div>
 				<div>
-					<p>Plataformas</p>
+					<p tabindex="0">Plataformas</p>
 					<ul class="platforms default-gray-style">
-						<li><i class="fab fa-xbox"></i></li>
-						<li><i class="fas fa-desktop"></i></li>
-						<li><i class="fa fa-cloud"></i></li>
-						<li><i class="fab fa-playstation"></i></li>
+						<li tabindex="0"><i class="fab fa-xbox" lang="en" title="xbox"></i></li>
+						<li tabindex="0"><i class="fas fa-desktop" lang="en" title="desktop"></i></li>
+						<li tabindex="0"><i class="fa fa-cloud" lang="en" title="cloud"></i></li>
+						<li tabindex="0"><i class="fab fa-playstation" lang="en" title="playstation"></i></li>
 					</ul>
 				</div>
 			</div>
@@ -120,7 +120,7 @@
 			</div>
 
 			<div class="game-info-box">
-				<p class="game-info-title">IDIOMAS</p>		
+				<p class="game-info-title" tabindex="0">IDIOMAS</p>		
 					<table>
 					  <tr>
 					  	<th></th>
@@ -129,19 +129,19 @@
 					    <th>Legenda</th>
 					  </tr>
 					  <tr>
-					    <td>Português (Brasil)</td>
+					    <td tabindex="0">Português (Brasil)</td>
 					  </tr>
 					  <tr>
-					    <td>Inglês</td>
+					    <td tabindex="0">Inglês</td>
 					  </tr>
 					  <tr>
-					    <td>Francês</td>
+					    <td tabindex="0">Francês</td>
 					  </tr>
 					  <tr>  
-					    <td>Italiano</td>
+					    <td tabindex="0">Italiano</td>
 					  </tr>
 					  <tr>
-					    <td>Alemão</td>
+					    <td tabindex="0">Alemão</td>
 					  </tr>
 					  <tr>
 					    <td>Centro comercial Moctezuma</td>
@@ -162,7 +162,7 @@
 			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/gtav.jpg"/>
 				<div class="game-info">
-					<span class="game-name">GTA V - Grant Theft Auto Five</span>
+					<span class="game-name" lang="en">GTA V - Grant Theft Auto Five</span>
 					<ul class="supported-platforms">
 							<li><i class="fab fa-xbox"></i></li>
 							<li><i class="fas fa-desktop"></i></li>
@@ -179,7 +179,7 @@
 			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/the_witcher3.jpg"/>
 				<div class="game-info">
-					<span class="game-name">The Witcher 3 - Wild Hunt</span>
+					<span class="game-name" lang="en">The Witcher 3 - Wild Hunt</span>
 					<ul class="supported-platforms">
 							<li><i class="fab fa-xbox"></i></li>
 							<li><i class="fas fa-desktop"></i></li>
@@ -196,7 +196,7 @@
 			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/assassins_creed_bf.jpg"/>
 				<div class="game-info">
-					<span class="game-name">Assassin's Creed Black Flag</span>
+					<span class="game-name" lang="en">Assassin's Creed Black Flag</span>
 					<ul class="supported-platforms">
 							<li><i class="fab fa-xbox"></i></li>
 							<li><i class="fas fa-desktop"></i></li>
@@ -214,7 +214,7 @@
 			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/res3.png"/>
 				<div class="game-info">
-					<span class="game-name">Resident Evil 3</span>
+					<span class="game-name" lang="en">Resident Evil 3</span>
 					<ul class="supported-platforms">
 							<li><i class="fab fa-xbox"></i></li>
 							<li><i class="fas fa-desktop"></i></li>
@@ -232,7 +232,7 @@
 			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/fall_guys.jpg"/>
 				<div class="game-info">
-					<span class="game-name">Fall Guys</span>
+					<span class="game-name" lang="en">Fall Guys</span>
 					<ul class="supported-platforms">
 							<li><i class="fab fa-xbox"></i></li>
 							<li><i class="fas fa-desktop"></i></li>
@@ -249,7 +249,7 @@
 			<li class="game-item-box" tabindex="0">
 				<img class="game-wallpaper" src="images/games/bf4.jpg"/>
 				<div class="game-info">
-					<span class="game-name">Battlefield 4</span>
+					<span class="game-name" lang="en">Battlefield 4</span>
 					<ul class="supported-platforms">
 							<li><i class="fab fa-xbox"></i></li>
 							<li><i class="fas fa-desktop"></i></li>
@@ -268,19 +268,19 @@
 
 
 
-	<footer>
+	<footer title="Rodapé">
 		<!--<i class="far fa-copyright"></i><p>All rights reserved</p>-->
 		<div>
-			<p><b>Nossas redes sociais</b></p>
+			<p tabindex="0"><b>Nossas redes sociais</b></p>
 			<ul class="flex-display">
-				<a href="https://www.instagram.com/"><li><i class="fab fa-instagram"></i></li></a>
-				<a href="https://www.facebook.com/"><li><i class="fab fa-facebook"></i></li></a>
-				<a href="https://www.twitter.com/"><li><i class="fab fa-twitter"></i></li></a>
+				<a href="https://www.instagram.com/"><li><i class="fab fa-instagram" title="Instagram"></i></li></a>
+				<a href="https://www.facebook.com/"><li><i class="fab fa-facebook" title="Facebook"></i></li></a>
+				<a href="https://www.twitter.com/"><li><i class="fab fa-twitter" title="Twitter"></i></li></a>
 			</ul>
 		</div>
 
 		<div>
-			<p><b>Sobre nós</b></p>
+			<p tabindex="0"><b>Sobre nós</b></p>
 			<ul class="break-list">
 				<a href="https://www.instagram.com/"><li>Sobre nós</li></a>
 				<a href="https://www.facebook.com/"><li>FAQ</li></a>
@@ -288,14 +288,14 @@
 		</div>
 
 		<div>
-			<p><b>Fale conosco</b></p>
+			<p tabindex="0"><b>Fale conosco</b></p>
 			<ul class="break-list">
 				<a href="https://www.instagram.com/"><li>Fale conosco</li></a>
 			</ul>
 		</div>
 
 		<div>
-			<p><b>Termos de uso</b></p>
+			<p tabindex="0"><b>Termos de uso</b></p>
 			<ul class="break-list">
 				<a href="https://www.instagram.com/"><li>Nossos termos</li></a>
 			</ul>
@@ -303,12 +303,12 @@
 
 
 		<div>
-			<p><b>Métodos de pagamento</b></p>
+			<p tabindex="0"><b>Métodos de pagamento</b></p>
 			<ul class="flex-display">
-				<li><i class="fab fa-cc-visa"></i></li>
-				<li><i class="fab fa-cc-mastercard"></i></li>
-				<li><i class="fab fa-paypal"></i></li>
-				<li><i class="fa-brands fa-pix"></i></li>
+				<li tabindex="0"><i class="fab fa-cc-visa" title="Visa"></i></li>
+				<li tabindex="0"><i class="fab fa-cc-mastercard" title="Mastercard"></i></li>
+				<li tabindex="0"><i class="fab fa-paypal" title="PayPal"></i></li>
+				<li tabindex="0"><i class="fa-brands fa-pix" title="Pix"></i></li>
 			</ul>
 		</div>
 
