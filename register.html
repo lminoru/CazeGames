@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="pt-br">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -16,24 +16,24 @@
 </head>
 <body>
 	<header>
-		<a href="index.html" tabindex="-1"><img src="images/logo-org.png" tabindex="0"></a>
+		<a href="index.html" tabindex="-1"><img src="images/logo-org.png" tabindex="0" alt="Logo do site e botão para tela inicial"></a>
 	</header>
 
 	<form id="login-box" action="">
 		<p class="label">Usuário</p>
-		<input type="text" name="username" required>
+		<input type="text" name="username" title="Usuário" tabindex="0" required>
 		<br><br>
 		<p class="label">E-mail</p>
-		<input type="email" name="email" required>
+		<input type="email" name="email" title="Email" tabindex="0" required>
 		<br><br>
 		<p class="label">Senha</p>
-		<input type="password" name="password" required>
+		<input type="password" name="password" title="Senha" tabindex="0" required>
 		<br><br>
 		<p class="label">Confirmar senha</p>
-		<input type="password" name="password_confirm" required>
+		<input type="password" name="password_confirm" title="Confirmar Senha" tabindex="0" required>
 		<br><br>
 		<input type="hidden" name="next_url" value="index.html">
-		<input type="checkbox" name="terms" required><span class="remember-me">Concordo com os <u><b>termos de serviço</b></u></span><br><br>
+		<input type="checkbox" name="terms" title="Concordo com os termos de serviço" required><span class="remember-me">Concordo com os <u><b>termos de serviço</b></u></span><br><br>
 
 		<input class="default-orange-style" type="submit" name="submit_login" value="CRIAR CONTA">
 		<a href="login.html"><p>Já tem uma conta?</p></a>
