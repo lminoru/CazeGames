@@ -8,6 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="login.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
 	<title>CZGames - conecte-se</title>
 </head>
 <body>
@@ -15,7 +19,7 @@
 		<a href="index.html" tabindex="-1"><img src="images/logo-org.png" tabindex="0" alt="Logo do site e botão para tela inicial"></a>
 	</header>
 
-	<form id="login-box" action="index.html">
+	<form id="login-box" action="">
 		<h3>Entrar</h3>
 		<p class="label">Usuário</p>
 		<input type="text" name="username" title="Usuário" tabindex="0" required>
@@ -26,7 +30,9 @@
 		<a href=""><p class="password-forgot">Esqueci minha senha</p></a>
 		<input type="checkbox" name="rememberme" title="Lembre-me"><span class="remember-me">Lembre-me</span><br><br>
 
-		<a href="carrinho_compras.html" tabindex="-1" class="create-account"><input class="default-orange-style" type="submit" name="submit_login" value="INICIAR SESSÃO"></a>
+		<input type="hidden" name="next_url" value="index.html">
+
+		<input class="default-orange-style" type="submit" name="submit_login" value="INICIAR SESSÃO">
 		<a href="register.html" class="create-account"><p>Criar conta</p></a>
 	</form>
 	<div vw class="enabled">
@@ -35,6 +41,18 @@
 	  <div class="vw-plugin-top-wrapper"></div>
 	</div>
 </div>
+<script type="text/javascript" src="login.js"></script>
+<script type="text/javascript">
+
+	if (getUrlParameter('next_url') != false){
+		$('input[name="next_url"]').attr('value',getUrlParameter('next_url'));
+	}
+
+	if (getUrlParameter('submit_login') != false){
+		do_login();
+		window.location.href=getUrlParameter('next_url');
+	}
+</script>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
 	new window.VLibras.Widget('https://vlibras.gov.br/app');
