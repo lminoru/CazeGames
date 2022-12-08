@@ -46,6 +46,7 @@
 
 	if (getUrlParameter('next_url') != false){
 		$('input[name="next_url"]').attr('value',getUrlParameter('next_url'));
+		$('.create-account').attr('href', 'register.html?next_url='+getUrlParameter('next_url'));
 	}
 
 	if (getUrlParameter('submit_login') != false){
