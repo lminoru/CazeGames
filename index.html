@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="effects.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="acessibilidade.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<script
@@ -22,6 +23,7 @@
 		<img src="images/logo-org.png" alt="logo do site"/>
 	</div>
 
+
 	<section id="main_div" aria-label="menu">
 		<div id="menu">
 			<img src="images/logo-org.png"  alt="logo do site" tabindex="0"/>
@@ -33,7 +35,29 @@
 			</ul>
 			<ul id="icon_list" aria-label="ferramentas">
 				<li tabindex="0"><i class="fa fa-search" title="Ferramenta de busca"></i></li>
-				<li tabindex="0"><i class="fa fa-universal-access" title="Acessibilidade"></i></li>
+				<li tabindex="0" class="access-button"><i class="fa fa-universal-access" title="Acessibilidade"></i>
+				</li>
+
+				<div class="menu-acessibilidade">
+						<h1>ACESSIBILIDADE</h1>
+						<div>
+							<span>Tamanho da fonte</span>
+							<i class="fa fa-plus-circle"></i>
+							<i class="fa fa-minus-circle"></i>
+						</div>
+
+						<div>
+							<span>Leitor de tela</span>
+							<i class="fa fa-toggle-off screen-reader"></i>
+						</div>
+
+						<div>
+							<span>Adaptação de cores</span>
+							<i class="fa fa-toggle-off color-adaption"></i>
+						</div>
+					</div>
+
+
 				<li tabindex="0"><i class="fa fa-shopping-cart" title="Carrinho de Compras"></i></li>
 				<li tabindex="0"><i class="fa fa-user" title="Usuário"></i></li>
 			</ul>
@@ -402,6 +426,11 @@
 
 		$("#menu_activate").click(function () {
 			$("#menu").slideToggle();
+		});
+
+
+		$(".access-button").click(function() {
+			$(".menu-acessibilidade").slideToggle();
 		});
 	</script>
 
