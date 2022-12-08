@@ -70,7 +70,7 @@ header {
 }
 
 
-#login-box input[type="text"], #login-box input[type="password"] {
+#login-box input[type="text"], #login-box input[type="password"], #login-box input[type="email"] {
 	background-color: #2C2B2B;
 	border:none;
 	font-size:14px;
@@ -339,4 +339,145 @@ header {
 	max-width: 10vw;
 	margin:1vw;
 	text-align: center;
+}
+
+@media (max-width: 1200px) {
+	#login-box {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		left:0;
+		top:10px	;
+		margin:none;
+		transform: none;
+		padding:5vh;
+		color:#DEDDDC;
+		border-radius: 5px;
+		font-family: 'Roboto', sans-serif;
+		min-width: none;
+		min-height: none;
+		text-align: center;
+		z-index: 1;
+		text-align: center;
+	}
+
+
+	#login-box p[class="label"] {
+		margin:5px;
+		margin-left:0;
+		font-size: 16px;
+		text-align: left;
+	}
+
+
+	#login-box input[type="text"], #login-box input[type="password"] {
+		background-color: #2C2B2B;
+		border:none;
+		font-size:14px;
+		color:white;
+		padding:0.8em;
+		width: 100%;
+		color:#DEDDDC;
+	
+	}
+
+
+	.create-account {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+
+
+	/* confirmacao_compra */
+	.warn {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: none;
+		margin:5vh;
+		margin-top:2vh;
+		font-size: 18pt;
+	}
+
+	#confirmation-box {
+		position: relative;
+		left: 0;
+		top:0;
+		transform: none;
+		padding:5vh;
+		color:#DEDDDC;
+		border-radius: 5px;
+		font-family: 'Roboto', sans-serif;
+		text-align: center;
+		z-index: 1;
+		text-align: right;
+		font-size: 16px;
+		min-width: none;
+		min-height: none;
+	}
+
+	.game-confirmation {
+		position: relative;
+		background-color:#111111;
+		display: flex;
+		flex-direction: row;
+		height: auto;
+		overflow: hidden;
+		padding:1vw;
+		font-family: 'Bebas Neue', cursive;
+		color:#FFFFFF;
+	}
+
+	.game-confirmation-name {
+		font-size: 16pt;
+		color:white;
+		margin:1vw;
+		flex:1.0;
+	}
+
+	.game-confirmation-price {
+		flex:1;
+		font-size: 16pt;
+		margin:1vw;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.game-confirmation > img {
+		overflow: hidden;
+		max-width: 30vw;
+	}
+
+
+	#payment-method-info {
+		font-size: 16pt;
+	}
+
+
+	#buy-total {
+		font-size: 16pt;
+	}
+
+	.buy-confirmation {
+		font-size: 16pt;
+	}
+
+	#msg-box {
+		width: 70%;
+	}
+
+	body {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	body,html {
+		height: 100%;
+		overflow: hidden;
+	}
+
+
 }

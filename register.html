@@ -15,25 +15,25 @@
 		<a href="index.html" tabindex="-1"><img src="images/logo-org.png" tabindex="0"></a>
 	</header>
 
-	<div id="login-box">
+	<form id="login-box" action="carrinho_compras.html">
 		<p class="label">Usuário</p>
-		<input type="text" name="username">
+		<input type="text" name="username" required>
 		<br><br>
 		<p class="label">E-mail</p>
-		<input type="text" name="email">
+		<input type="email" name="email" required>
 		<br><br>
 		<p class="label">Senha</p>
-		<input type="password" name="password">
+		<input type="password" name="password" required>
 		<br><br>
 		<p class="label">Confirmar senha</p>
-		<input type="password" name="password_confirm">
+		<input type="password" name="password_confirm" required>
 		<br><br>
 
-		<input type="checkbox" name="rememberme"><span class="remember-me">Concordo com os <u><b>termos de serviço</b></u></span><br><br>
+		<input type="checkbox" name="terms" required><span class="remember-me">Concordo com os <u><b>termos de serviço</b></u></span><br><br>
 
-		<a href="carrinho_compras.html" tabindex="-1"><input class="default-orange-style" type="submit" name="submit" value="CRIAR CONTA"></a>
+		<input class="default-orange-style" type="submit" name="submit_login" value="CRIAR CONTA">
 		<a href="login.html"><p>Já tem uma conta?</p></a>
-	</div>
+	</form>
 	<div vw class="enabled">
 	<div vw-access-button class="active"></div>
 	<div vw-plugin-wrapper>

@@ -268,6 +268,7 @@ body {
 }
 
 .last-gray-box {
+	position: relative;
 	padding:3vh;
 	margin-top:3vh;
 }
@@ -368,4 +369,297 @@ footer ul li {
 
 .break-list li{
 	display: block;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #111111;
+	text-align: center;
+	z-index: 99;
+	display: none;
+}
+
+.mobile_menu img {
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#menu_activate {
+	position: fixed;
+	left:0;
+	top:0;
+	color:#FFFFFF;
+	margin:5vh;
+	margin-left: 3vh;
+	font-size: 30pt;
+	z-index: 10;
+	display: none;
+}
+
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #111111;
+	text-align: center;
+	z-index: 99;
+	display: none;
+}
+
+.mobile_menu img {
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#menu_activate {
+	position: fixed;
+	left:0;
+	top:0;
+	color:#FFFFFF;
+	margin:5vh;
+	margin-left: 3vh;
+	font-size: 30pt;
+	z-index: 10;
+	display: none;
+}
+
+@media (max-width: 1200px) {
+  
+
+	#menu {
+		position: fixed;
+		width:100%;
+		height: 100%;
+		background-color: #111111;
+		text-align: center;
+		display: none;
+		overflow: hidden;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 1fr 1fr;
+		z-index: 9;
+	}
+
+	#main_div {
+		margin-bottom: 10vh;
+	}
+
+	.mobile-menu {
+		display: block;
+	}
+
+	#menu_activate {
+		display: block;
+		z-index: 100;
+	}
+
+	#menu > img {
+		padding:0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+		opacity: 0;
+	}
+
+
+	#navigator {
+		display: grid;
+	}
+
+	#navigator > li {
+		display: block;
+		margin-bottom: 5vh;
+	}
+
+
+	#icon_list > li {
+		display: inline-block;
+		margin:1vh;
+	}
+
+	#jogos-secao {
+		text-align: center;
+	}
+
+	.game-list > li {
+		width: 90%;
+
+	}
+
+	.game-wallpaper {
+		transform:translateX(-50%);
+	}
+
+	.jogos-header {
+		display: flex;
+		flex-direction: row;
+	}
+
+
+	.see-more {
+		flex:1;
+		margin-left:8vh;
+		font-size: 16pt;
+		padding:1vh;
+	}
+
+	.section-title {
+		flex:1;
+		font-size: 18pt;
+		margin:0;
+	}
+
+
+	footer {
+		position: inherit;
+		background-color:#111111;
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+		padding:2vw;
+		box-sizing: border-box;
+		color:white;
+		font-family:'Roboto', sans-serif;
+		width: auto;
+		margin-bottom: 0;
+		margin-top:35vh;
+	}
+
+	footer a {
+		text-decoration: none;
+		color:white;
+	}
+
+	footer ul li {
+		margin-bottom:2vh;
+		margin-left: 0;
+	}
+
+	.flex-display {
+		list-style: none;
+		display: inline-block;
+		margin:2vh;
+		font-size: 20px;
+	}
+
+	.flex-display li {
+		display: inline-block;
+	}
+
+
+
+	#carrinho-content {
+		position: relative;
+		margin:10vh;
+		margin-left: 1vh;
+		margin-right: 1vh;
+	}
+
+	#carrinho-content > div {
+		display:grid;
+		grid-template-columns: 1fr;
+	}
+
+	.game-card {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		font-family: 'Bebas Neue', sans-serif;
+		vertical-align: middle;
+		padding:3vh;
+		margin-top: 3vh;
+		width: 100%;
+	}
+
+	.game-card > img {
+		margin-right: 3%;
+		max-width: 30vw;
+	}
+
+	.game-name-card {
+		flex:1;
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 16pt;
+		color: #FFFFFF;
+	}
+
+	.game-name-card > i {
+		margin-left: 2vh;
+		color:#DC2F02;
+		cursor: pointer;
+	}
+
+
+	.game-card-price {
+		color: #FFFFFF;
+		font-size: 10pt;
+		font-family: 'Roboto', sans-serif;
+
+	}
+
+	.game-price-card {
+		font-size: 16pt;
+		margin-right: 5vh;
+	}
+
+
+	.proposes-card {
+		font-size: 16pt;
+		display: grid;
+		grid-gap: 3vw;
+		grid-template-columns: 1fr;
+		padding: 0;
+		padding: 3vh;
+		padding-left: 1vh;
+		padding-right: 1vh;
+		text-align: center;
+	}
+
+	.valor-economizado {
+		font-size: 16pt;
+	}
+
+	.descontos {
+		font-size: 16pt;
+	}
+
+	.game-propose-card {
+		font-size: 16pt;
+		display: grid;
+		width: 95%;
+		margin:1vh;
+	}
+
+	.game-price-gray-box{
+		font-size: 16pt;
+
+	}
+
+	.add-cart-btn {
+		font-size: 16pt;
+	}
+
+	.total-compra {
+		font-size: 16pt;
+	}
+
+	.total-estimado {
+		font-size: 16pt;
+	}
+
+	.buy-buttons {
+		display: flex;
+		width: 100%;
+	}
+
+	.buy-btn {
+		flex: 1;
+		font-size: 16pt;
+	}
+
 }

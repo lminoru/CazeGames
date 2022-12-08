@@ -13,8 +13,15 @@
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
   crossorigin="anonymous"></script>
 	<title>CZGames - Informações do Produto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
+	<i class="fa fa-bars" id="menu_activate"></i>
+	<div class="mobile-menu">
+		<img src="images/logo-org.png" alt="logo do site"/>
+	</div>
+
 	<section id="main_div">
 		<div id="menu">
 			<img src="images/logo-org.png" alt="Logo do Site"/>
@@ -38,7 +45,8 @@
 			<img src="images/games/cyber-punk-2077.png">
 			<div class="game-confirmation-rect">
 				<span class="game-confirmation-name"> COMPRE CYBERPUNK 2077</span>
-				<p><span class="game-discount">-50%</span>
+				<p>
+						<span class="game-discount">-50%</span>
 						<span class="game-price-gray">R$ 159,99</span>
 						<span class="default-orange-style" id="game-btn" tabindex="0" onclick='window.location.href="login.html"'>COMPRE AGORA</span>
 				</p>
@@ -309,14 +317,29 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#navigator li:nth-child(1)").css("color", "#DC2F02");
+			$("#menu_activate").click(function () {
+			$("#menu").slideToggle();
+			});
 		});
 	</script>
+
+
 	<div vw class="enabled">
 	<div vw-access-button class="active"></div>
 	<div vw-plugin-wrapper>
 	  <div class="vw-plugin-top-wrapper"></div>
 	</div>
 </div>
+
+<script type="text/javascript" src="login.js"></script>
+	<script type="text/javascript">
+
+		if (getUrlParameter('submit_login') == true){
+			do_login();
+		}
+
+	</script>
+
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
 	new window.VLibras.Widget('https://vlibras.gov.br/app');

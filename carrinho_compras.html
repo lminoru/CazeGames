@@ -15,6 +15,10 @@
 	<title>CZGames</title>
 </head>
 <body>
+	<i class="fa fa-bars" id="menu_activate"></i>
+	<div class="mobile-menu">
+		<img src="images/logo-org.png" alt="logo do site"/>
+	</div>
 
 	<section id="main_div">
 		<div id="menu">
@@ -122,6 +126,10 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#icon_list li:nth-child(3)").css("color", "#DC2F02");
+		});
+
+		$("#menu_activate").click(function () {
+			$("#menu").slideToggle();
 		});
 	</script>
 	<div vw class="enabled">
