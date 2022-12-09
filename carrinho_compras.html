@@ -22,38 +22,40 @@
 	</div>
 
 	<section id="main_div">
-		<div id="menu">
-			<img src="images/logo-org.png" tabindex="0"/>
-			<ul id="navigator" >
+		<div id="menu" aria-label="menu" role="navigation">
+			<img src="images/logo-org.png"  alt="logo do site" tabindex="0"/>
+			<ul id="navigator" aria-label="navegação">
 				<li tabindex="0">INÍCIO</li>
 				<li tabindex="0">CATÁLOGO</li>
 				<li tabindex="0">CZ NUVEM</li>
 				<li tabindex="0">BIBLIOTECA</li>
 			</ul>
-			<ul id="icon_list">
-				<li tabindex="0"><i class="fa fa-search"></i></li>
+			<ul id="icon_list" aria-label="ferramentas">
+				<li tabindex="0"><i class="fa fa-search" title="Ferramenta de busca"></i></li>
 				<li tabindex="0" class="access-button"><i class="fa fa-universal-access" title="Acessibilidade" aria-haspopup="menu"></i></li>
 
-				<div class="menu-acessibilidade">
+				<div class="menu-acessibilidade" aria-label="">
 						<h1>ACESSIBILIDADE</h1>
 						<div>
 							<span>Tamanho da fonte</span>
-							<i class="fa fa-plus-circle increase-font" tabindex="0"></i>
-							<i class="fa fa-minus-circle decrease-font" tabindex="0"></i>
+							<i class="fa fa-plus-circle increase-font"  tabindex="0" aria-label="Aumentar fonte" title="Aumentar fonte"></i>
+							<i class="fa fa-minus-circle decrease-font" tabindex="0"  aria-label="Diminuir fonte" title="Diminuir fonte"></i>
 						</div>
 
 						<div>
 							<span>Leitor de tela</span>
-							<i class="fa fa-toggle-off screen-reader" tabindex="0"></i>
+							<i class="fa fa-toggle-off screen-reader" tabindex="0"  aria-label="Leitor de tela" role="switch" title="Leitor de tela"></i>
 						</div>
 
 						<div>
 							<span>Adaptação de cores</span>
-							<i class="fa fa-toggle-off color-adaption" tabindex="0"></i>
+							<i class="fa fa-toggle-off color-adaption" tabindex="0" aria-label="Adaptar cores" role="switch" title="Adaptar cores"></i>
 						</div>
 					</div>
-				<li tabindex="0"><i class="fa fa-shopping-cart"></i></li>
-				<li tabindex="0"><i class="fa fa-user"></i></li>
+
+
+				<li tabindex="0"><i class="fa fa-shopping-cart" title="Carrinho de Compras"></i></li>
+				<li tabindex="0" onclick="window.location.href='login.html'"><i class="fa fa-user" title="Usuário"></i></li>
 			</ul>
 		</div>
 		<section id="carrinho-content">
