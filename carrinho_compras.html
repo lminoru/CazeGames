@@ -63,29 +63,29 @@
 				<p class="section-title" tabindex="0">SEU CARRINHO DE COMPRAS</p>
 				<div class="gray-box-style game-card">
 					<img src="images/games/cyber-punk-2077-banner2.png" lang="en" alt="Cyberpunk 2077" title="Cyberpunk 2077" tabindex="0">
-					<p class="game-name-card" lang="en" tabindex="0">CYBERPUNK 2077 <i class="fa fa-trash" tabindex="0" title="Remover jogo"></i></p>
+					<p class="game-name-card" lang="en" tabindex="0">CYBERPUNK 2077 <i class="fa fa-trash" tabindex="0" aria-label="Remover Jogo" title="Remover jogo"></i></p>
 					<div class="game-card-price">
-						<i class="game-discount-price">R$ 53,33</i>
-						<i class="game-price-card" tabindex="0">R$ 33,33</i>
+						<p class="game-discount-price">R$ 53,33</p>
+						<p class="game-price-card" tabindex="0">R$ 33,33</p>
 					</div>
 				</div>
 				
 				<div class="gray-box-style game-card proposes-card">
 					<p>ASSINE CZ NA NÚVEM E JOGUE EM QUALQUER LUGAR!</p>
 					<div class="game-propose-card">
-						<i class="game-price-gray-box">R$ 29,99</i>
+						<p class="game-price-gray-box">R$ 29,99</p>
 						<button class="add-cart-btn" tabindex="0">ADICIONAR AO CARRINHO</button>
 					</div>
 				</div>
 
 				<div class="gray-box-style last-gray-box">
 					<div class="descontos">
-						<i class="valor-economizado" tabindex="0">Valor economizado</i>
-						<i tabindex="0">- R$ 20,00</i>
+						<p class="valor-economizado" tabindex="0">Valor economizado</p>
+						<p tabindex="0">- R$ 20,00</p>
 					</div>
 					<div class="total-estimado">
-						<spam class="total-compra" tabindex="0">Total estimado: </spam>
-						<i tabindex="0">R$ 33,33</i>
+						<p class="total-compra" tabindex="0">Total estimado: </p>
+						<p tabindex="0">R$ 33,33</p>
 					</div>
 					<div class="buy-buttons">
 						<button class="default-orange-style buy-btn" onclick='window.location.href="confirmacao_compra.html"'>COMPRAR PARA MINHA CONTA</button>
@@ -147,7 +147,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$("#icon_list li:nth-child(3)").css("color", "#DC2F02");
+			$("#icon_list li:nth-child(4)").css("color", "#DC2F02");
 		});
 
 		$("#menu_activate").click(function () {
@@ -191,11 +191,11 @@
 	</div>
 </div>
 <script type="text/javascript" src="login.js"></script>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	if (!is_logged()){
 		window.location.href="login.html?next_url="+getUrlParameter('next_url');
 	}
-</script>
+</script>-->
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
 	new window.VLibras.Widget('https://vlibras.gov.br/app');
