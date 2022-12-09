@@ -148,7 +148,7 @@ footer ul li {
 
 .game-genres li {
 	display: inline-block;
-	margin-right: 1vh;
+	margin: 2vh;
 }
 
 .game-text-info {
@@ -709,6 +709,20 @@ footer ul li {
 
 	.platforms {
 		max-width: none;
+	}
+
+	.date {
+		max-width: none;
+		flex:1;
+	}
+
+	.game-release-info {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.game-release-info > div {
+		margin:3vh;
 	}
 
 
