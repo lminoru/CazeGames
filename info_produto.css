@@ -213,6 +213,13 @@ footer ul li {
 	text-align: center;
 }
 
+.date {
+	list-style: none;
+	display: block;
+	max-width: 6vw;
+	text-align: center;
+}
+
 .platforms > li {
 	display: inline-block;
 	color:#DEDDDC;
