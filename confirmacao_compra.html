@@ -8,31 +8,31 @@
 	<link rel="stylesheet" type="text/css" href="login.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-	<title>CZGames</title>
+	<title>CZGames - confirme sua compra</title>
 </head>
 <body>
 	<header>
-		<a href="index.html"><img src="images/logo-org.png"></a>
+		<a href="index.html"><img src="images/logo-org.png" tabindex="0" alt="Logo do site e botão para tela inicial" title="redirecionar para a tela principal"></a>
 	</header>
 
-	<p class="default-orange-style warn">CONFIRME SUA COMPRA</p>
+	<p class="default-orange-style warn" tabindex="0">CONFIRME SUA COMPRA</p>
 
 	<div id="confirmation-box">
 		<div class="game-confirmation">
-				<img src="images/games/cp2077.jpg">
-				<span class="game-confirmation-name">Cyberpunk 2077</span>
-				<span class="game-confirmation-price">R$ 159,99</span>
+				<img src="images/games/cp2077.jpg" alt="Capa do Jogo" tabindex="0">
+				<span class="game-confirmation-name" tabindex="0">Cyberpunk 2077</span>
+				<p class="game-confirmation-price" tabindex="0">R$ 159,99</p>
 		</div>
 
 		<form class="buy-confirmation" action="compra_finalizada.html">
-			<p id="buy-total">Total: R$ 159,99</p>
+			<p id="buy-total" tabindex="0">Total: R$ 159,99</p>
 			<hr>
-			<div id="payment-method-info">
+			<div id="payment-method-info" tabindex="0">
 				<p>Método de pagamento:</p> <p style="color:#0C9200">PayPal</p>
 				<p>Conta CZ: </p><p>Casemiro</p>
 			</div>
 			<hr>
-			<input type="checkbox" name="check" required>
+			<input type="checkbox" name="check" title="Concordo com os termos do Acordo de Subscrição CzGames" required>
 			<span>Eu concordo com os termos do <a href=""><u><b>Acordo de Subscrição CzGames</b></u></a></span>
 			<div>
 				<input type="submit" class="default-orange-style show" value="COMPRAR"/>
