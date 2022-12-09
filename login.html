@@ -44,6 +44,10 @@
 <script type="text/javascript" src="login.js"></script>
 <script type="text/javascript">
 
+	if (is_logged()){
+		window.location.href="index.html";
+	}
+
 	if (getUrlParameter('next_url') != false){
 		$('input[name="next_url"]').attr('value',getUrlParameter('next_url'));
 		$('.create-account').attr('href', 'register.html?next_url='+getUrlParameter('next_url'));
