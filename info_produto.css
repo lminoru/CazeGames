@@ -713,3 +713,9 @@ footer ul li {
 
 
 }
+
+.info-prod-breadcrumb {
+	font-family: 'Bebas Neue', 'Robot', sans-serif;
+	font-size: 30pt;
+	color: #FFFFFF;
+}

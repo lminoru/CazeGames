@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="effects.css">
 	<link rel="stylesheet" type="text/css" href="info_produto.css">
+	<link rel="stylesheet" type="text/css" href="acessibilidade.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 		<script
@@ -33,7 +34,25 @@
 			</ul>
 			<ul id="icon_list" aria-label="ferramentas">
 				<li tabindex="0"><i class="fa fa-search" title="Ferramenta de Busca"></i></li>
-				<li tabindex="0"><i class="fa fa-universal-access" title="Acessibilidade"></i></li>
+				<li tabindex="0" class="access-button"><i class="fa fa-universal-access" title="Acessibilidade"></i></li>
+				<div class="menu-acessibilidade">
+						<h1>ACESSIBILIDADE</h1>
+						<div>
+							<span>Tamanho da fonte</span>
+							<i class="fa fa-plus-circle increase-font" tabindex="0"></i>
+							<i class="fa fa-minus-circle decrease-font" tabindex="0"></i>
+						</div>
+
+						<div>
+							<span>Leitor de tela</span>
+							<i class="fa fa-toggle-off screen-reader" tabindex="0"></i>
+						</div>
+
+						<div>
+							<span>Adaptação de cores</span>
+							<i class="fa fa-toggle-off color-adaption" tabindex="0"></i>
+						</div>
+				</div>
 				<li tabindex="0"><i class="fa fa-shopping-cart" title="Carrinho de Compras"></i></li>
 				<li tabindex="0"><i class="fa fa-user" title="Usuário"></i></li>
 			</ul>
@@ -42,6 +61,7 @@
 
 	<section id="game-information">
 		<div class="game-information-images">
+			<h3 class="info-prod-breadcrumb">Informações do Produto</h3>
 			<img src="images/games/cyber-punk-2077.png" lang="en" alt="Cyberpunk 2077" title="Cyberpunk 2077" tabindex="0">
 			<div class="game-confirmation-rect">
 				<span class="game-confirmation-name"> COMPRE <span lang="en">CYBERPUNK</span> 2077</span>
@@ -119,36 +139,7 @@
 				</div>
 			</div>
 
-			<div class="game-info-box">
-				<p class="game-info-title" tabindex="0">IDIOMAS</p>		
-					<table>
-					  <tr>
-					  	<th></th>
-					    <th>Interface</th>
-					    <th>Dublagem</th>
-					    <th>Legenda</th>
-					  </tr>
-					  <tr>
-					    <td tabindex="0">Português (Brasil)</td>
-					  </tr>
-					  <tr>
-					    <td tabindex="0">Inglês</td>
-					  </tr>
-					  <tr>
-					    <td tabindex="0">Francês</td>
-					  </tr>
-					  <tr>  
-					    <td tabindex="0">Italiano</td>
-					  </tr>
-					  <tr>
-					    <td tabindex="0">Alemão</td>
-					  </tr>
-					  <tr>
-					    <td>Centro comercial Moctezuma</td>
-					    <td>Francisco Chang</td>
-					    <td>Mexico</td>
-					  </tr>
-					</table> 
+			
 			</div>
 		</div>
 	</section>
@@ -337,6 +328,41 @@
 		if (getUrlParameter('submit_login') == true){
 			do_login();
 		}
+
+		$("#menu_activate").click(function () {
+			$("#menu").slideToggle();
+		});
+
+
+		$(".access-button").click(function() {
+			$(".menu-acessibilidade").slideToggle();
+		});
+
+		$('.access-button').keydown(function (e) {
+			 if (e.which == 13){
+			 	$(this).click();
+			 }
+		});   
+
+		$(".increase-font").click(function() {
+			$("*").each(function() {
+				var fontsize = parseInt($(this).css('font-size'));
+				var newfontsize = fontsize * 1.1;
+				$(this).css('font-size', newfontsize + "px");
+			});
+		});
+
+		$(".decrease-font").click(function() {
+			$("*").each(function() {
+				var fontsize = parseInt($(this).css('font-size'));
+				var newfontsize = fontsize * (10/11);
+				$(this).css('font-size', newfontsize + "px");
+			});
+		});
+
+		$(".screen-reader").click(function(){
+
+		});
 
 	</script>
 

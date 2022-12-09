@@ -209,8 +209,8 @@ header {
 	z-index: 1;
 	text-align: right;
 	font-size: 16px;
-	min-width: 70vw;
-	min-height: 60vh;
+	max-width: 70vw;
+	max-height: 60vh;
 }
 
 #confirmation-box::before {
