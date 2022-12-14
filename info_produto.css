@@ -533,6 +533,10 @@ footer ul li {
 		z-index: 9;
 	}
 
+	#menu_activate {
+		z-index: 99;
+	}
+
 	.mobile-menu {
 		display: block;
 	}

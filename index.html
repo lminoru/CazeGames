@@ -46,13 +46,8 @@
 						</div>
 
 						<div>
-							<span>Leitor de tela</span>
-							<i class="fa fa-toggle-off screen-reader" tabindex="0"  aria-label="Leitor de tela" role="switch" title="Leitor de tela"></i>
-						</div>
-
-						<div>
 							<span>Adaptação de cores</span>
-							<i class="fa fa-toggle-off color-adaption" tabindex="0" aria-label="Adaptar cores" role="switch" title="Adaptar cores"></i>
+							<i class="fa fa-toggle-off color-adaption" id="adptacao-cores" tabindex="0" aria-label="Adaptar cores" role="switch" title="Adaptar cores"></i>
 						</div>
 					</div>
 
@@ -457,6 +452,21 @@
 
 		$(".screen-reader").click(function(){
 
+		});
+
+
+		$("#adptacao-cores").click(function() {
+			$("*").each(function() {
+				if ($(this).css('color')) {
+					$(this).css('color', "white");
+				}
+
+				if ($(this).css('background-color') != 'rgba(0, 0, 0, 0)' && $(this).css('background-color') != 'transparent') {
+					$(this).css('background-color', "black");
+				}
+				$('#menu').css('background-color', 'black');
+				$('.game-list > li, .game-list > a > li').css('border', '1px solid white');
+			});;
 		});
 
 

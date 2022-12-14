@@ -152,7 +152,7 @@ body {
 }
 
 
-.game-list > li {
+.game-list > li, .game-list > a > li {
 	position: relative;
 	display:inline-block;
 	width: 232px;
@@ -163,32 +163,16 @@ body {
 	transition: 0.5s;
 	color:#111111;
 	cursor: pointer;
+	border:1px solid rgba(255, 255, 255, 0.1);
 }
 
-.game-list > a > li {
-	position: relative;
-	display:inline-block;
-	width: 232px;
-	height: 346px;
-	margin:1vh;
-	background-color:white;
-	overflow: hidden;
-	transition: 0.5s;
-	color:#111111;
-	cursor: pointer;
-}
 
 .game-list li:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	color:white;
 	transition: 0.5s;
 }
 
-.game-list li:hover {
-	transform: scale(1.1);
-	color:white;
-	transition: 0.5s;
-}
 
 .section-title {
 	color:white;
@@ -420,7 +404,7 @@ footer ul li {
 		text-align: center;
 	}
 
-	.game-list > li {
+	.game-list > li, .game-list > a > li {
 		width: 90%;
 
 	}
