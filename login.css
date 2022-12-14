@@ -21,6 +21,28 @@ header {
 	text-align: center;
 }
 
+
+.acc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin:10vw;
+	margin-left: 0;
+	background-color: black;
+	padding:1vh;
+	color:white;
+	font-size: 2em;
+	border-radius:5px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.acc:hover {
+	transition: 0.2s;
+	background-color: white;
+	color:black;
+}
+
 #login-box {
 	position: absolute;
 	left: 50%;
